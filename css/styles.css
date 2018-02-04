@@ -236,15 +236,19 @@ li :hover .subsubmenu a {
 }
 
 .block {
-	font-size: 1.5em;
+	font-size: 3em;
 	color: #fff;
 	margin: 0;
 	text-align: center;
 	width: 100%;
+	font-family: 'Londrina Solid', sans-serif;
+	text-shadow: 0 0 6px #000;
+	letter-spacing: 2px;
+	font-weight: 400;
 }
 
 .europe {
-	background-image: url("../images/hp-grid/venice.png");
+	background-image: url("../images/hp-grid/europe.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
@@ -260,12 +264,20 @@ li :hover .subsubmenu a {
 }
 
 .america {
+	background-image: url("../images/hp-grid/america.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
     background-color: green;
     margin-bottom: 10px;
     height: 230px;
 }
 
-.asia{
+.asia {
+	background-image: url("../images/hp-grid/asia.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
     background-color: yellow;
     margin-bottom: 10px;
     height: 230px;
@@ -359,6 +371,72 @@ blockquote span {
 
 .seicelandcover {
 	background-image: url("../images/country-main/south-iceland/southiceland-cover.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dubrovnik-cover {
+	background-image: url("../images/country-main/dubrovnik/dubrovnik.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hvar-cover {
+	background-image: url("../images/country-main/hvar/hvar.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.lisbon-cover {
+	background-image: url("../images/country-main/lisbon/lisbon.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.reykjavik-cover {
+	background-image: url("../images/country-main/reykjavik/reykjavik.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.lagos-cover {
+	background-image: url("../images/country-main/lagos/lagos.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.berlin-cover {
+	background-image: url("../images/country-main/berlin/berlin2.jpg");
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
