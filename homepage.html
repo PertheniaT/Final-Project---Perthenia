@@ -4,107 +4,97 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Perthenia Final Project</title>
+	<title>Peachy T(r)ips</title>
 
 	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Londrina+Solid:100,300,400,900" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+
 	<link rel="stylesheet" href="./css/styles.css">
 
 </head>
-<body>
-	<header>
-		<div>
-			<logo></logo>
-			<h1>Travel Diaries</h1>
-			<nav>
-				<ul>
-					<li><a href="#">Explore</a>
-						<ul>
-							<li><a href="#">Europe</a>
-								<li><a href="#">Netherlands</a></li>
-								<li><a href="#">Italy</a></li>
-								<li><a href="#">Portugal</a></li>
-								<li><a href="#">Ireland</a></li>
-								<li><a href="#">Scotland</a></li>
-								<li><a href="#">Iceland</a></li>
-								<li><a href="#">Croatia</a></li>
-							</li>
-							<li><a href="#">America</a>
-								<li><a href="#">USA</a></li>
-							</li>
-							<li><a href="#">Asia</a>
-								<li><a href="#">Thailand</a></li>
-							</li>
-							<li><a href="#">Africa</a>
-								<li><a href="#">South Africa</a></li>
-								<li><a href="#">Mozambique</a></li>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
 
-	<section>
-		<div>
+</head>
+	<body>
+		<section class="intro">
+			<header class="header container">
+				<logo class="logo">Logo</logo>
+				<div id="nav" class="overlay">
+					<a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
+					<div class="overlay-content">
+		  				<ul>
+			      			<li><a href="#">Home</a></li>
+			      			<li><a href="#">About</a></li>
+			      			<li><a href="#">Explore</a>
+			      				<div class="subsubmenu">
+			          				<a href="#">Europe</a>
+			          				<a href="#">Africa</a>
+			         				<a href="#">America</a>
+			          				<a href="#">Asia</a>
+			          			</div>
+			      			</li>
+			      		</ul>
+		      		</div>
+	 		 	</div>
+	 		 	<a href="#" class="openBtn burger" onclick="openNav()"><i class="fa fa-bars"></i></a>
+			</header>
+			<h1 class="container">Come and explore with me!</h1>
+		</section>
+
+	<section class="about">
+		<div class="container clearfix">
+			<h2>About</h2>
+			<img src="./images/profile_picture300x300.png" alt="profile-picture" id="profile-picture" class="profile fade-right">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.
+			<br>
+			Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+	</section>
+
+
+	<section class="explore">
+		<div class="container">
 			<h2>Explore</h2>
-			<div>
-				<h3>Europe</h3>
-				<img src="" alt="">
-				<ul>
-					<li><a href="#">Netherlands</a></li>
-					<li><a href="#">Italy</a></li>
-					<li><a href="#">Portugal</a></li>
-					<li><a href="#">Ireland</a></li>
-					<li><a href="#">Scotland</a></li>
-					<li><a href="#">Iceland</a></li>
-					<li><a href="#">Croatia</a></li>
-				</ul>
-			</div>
-			<div>
-				<h3>Americas</h3>
-				<img src="" alt="">
-				<ul>
-					<li><a href="#">USA</a></li>
-				</ul>
-			</div>
-			<div>
-				<h3>Asia</h3>
-				<img src="" alt="">
-				<ul>
-					<li><a href="#">Thailand</a></li>
-				</ul>
-			</div>
-			<div>
-				<h3>Africa</h3>
-				<img src="" alt="">
-				<ul>
-					<li><a href="#">South Africa</a></li>
-					<li><a href="#">Mozambique</a></li>
-				</ul>
+			<div class="imagegrid container">
+				<div class="column-one fade-left" id="column-one">
+					<div class="block europe"><a href="#">Europe</a></div>
+				</div>
+				<div class="column-two fade-right">
+					<div class="block africa"><a href="#">Africa</a></div>
+					<div class="row-two">
+						<div class="block america"><a href="#">Asia</a></div>
+						<div class="block asia"><a href="#">America</a></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<section>
-		<h2>About</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat.</p>
-		<img src="" alt="Picture">
+	<section class="quote">
+		<blockquote class="container">I haven't been everywhere but its on my list <span>- Susan Sontag</span></blockquote>
 	</section>
 
-	<section>
-		<blockquote>Quote about travel Lorem ipsum dolor sit amet, consectetur adipisicing elit. - Unknown</blockquote>
-	</section>
-
-	<footer>
-		<span>2018 - Made by Perthenia</span>
-		<!-- Will insert instagram and linkedin icons -->
+	<footer class="social">
+		<a href="https://www.instagram.com/peachyperth/"><i class="fa fa-instagram"></i></a>
+		<span class="made">2018 - Made by Perthenia</span>
 	</footer>
 
-</body>
+		<script src="./js/jquery-2.1.3.js"></script>
+		<script src="./js/index.js"></script>
+		<script src="./js/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+	</body>
 </html>
