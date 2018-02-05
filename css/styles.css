@@ -28,9 +28,9 @@ Author: Perthenia Thomas
 }
 
 .container {
-	max-width: 90%;
+	max-width: 85%;
 	margin: 0 auto;
-	width: 1024px;
+	width: 980px;
 }
 
 /*****************************************************
@@ -174,9 +174,7 @@ a .subsubmenu:hover {
 
 li :hover .subsubmenu a {
 	display: block;
-
 }
-
 
 /*****************************************************
 /* HOMEPAGE - MOBILE FIRST
@@ -254,11 +252,13 @@ li :hover .subsubmenu a {
 	margin: 0;
 	height: 350px;
 	margin-bottom: 10px;
-	background-color: red;
 }
 
 .africa {
-    background-color: blue;
+	background-image: url("../images/hp-grid/africa.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
     margin-bottom: 10px;
     height: 180px;
 }
@@ -268,7 +268,6 @@ li :hover .subsubmenu a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
-    background-color: green;
     margin-bottom: 10px;
     height: 230px;
 }
@@ -278,7 +277,6 @@ li :hover .subsubmenu a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
-    background-color: yellow;
     margin-bottom: 10px;
     height: 230px;
 }
@@ -315,6 +313,36 @@ blockquote span {
 /* CONTINENT PAGE
 /*****************************************************/
 
+.asia-background {
+	background-image: url("../images/cover-images/asia.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.europe-background {
+	background-image: url("../images/cover-images/europe-cover1.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.categories {
+	margin-bottom: 30px;
+}
+
+.categories p {
+	text-align: center;
+}
+
 .selections {
 	display: flex;
 	flex-direction: column;
@@ -335,7 +363,6 @@ blockquote span {
 }
 
 .text-block {
-	position: absolute;
 	text-align: center;
 	font-size: 2em;
 	font-weight: 300;
@@ -345,17 +372,185 @@ blockquote span {
 	color: #fff;
 }
 
-.tile-image {
-	text-align: center;
+/******************
+  tiles europe
+*******************
+*/
+.venice-tile {
+	background-image: url("../images/europe-tiles/venice.png");
 	background-position: center;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.venice-tile {
+	background-image: url("../images/europe-tiles/venice.png");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.lisbon-tile {
+	background-image: url("../images/europe-tiles/lisbon.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dubrovnik-tile {
+	background-image: url("../images/europe-tiles/dubrovnik.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.lagos-tile {
+	background-image: url("../images/europe-tiles/lagos.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hvar-tile {
+	background-image: url("../images/europe-tiles/hvar.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.siceland-tile {
+	background-image: url("../images/europe-tiles/southiceland.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.reykjavik-tile {
+	background-image: url("../images/europe-tiles/reykjavik.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.berlin-tile {
+	background-image: url("../images/europe-tiles/berlin.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.amsterdam-tile {
+	background-image: url("../images/europe-tiles/amsterdam.png");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.london-tile {
+	background-image: url("../images/europe-tiles/london.png");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dublin-tile {
+	background-image: url("../images/europe-tiles/dublin.png");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/******************
+  tiles asia
+*******************
+*/
+
+.bangkok-tile {
+	background-image: url("../images/asia-tiles/bangkok.png");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.phiphi-tile {
+	background-image: url("../images/asia-tiles/phiphi.png");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.samui-tile {
+	background-image: url("../images/asia-tiles/samui.png");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /*****************************************************
 /* COUNTRY PAGE
 /*****************************************************/
 
-/*venice cover*/
+/*cover images*/
 .venicecover {
 	background-image: url("../images/country-main/italy/italy-main.png");
 	background-position: center;
@@ -366,8 +561,6 @@ blockquote span {
     margin: 0;
     padding: 0;
 }
-
-/*south east london*/
 
 .seicelandcover {
 	background-image: url("../images/country-main/south-iceland/southiceland-cover.jpg");
@@ -446,10 +639,26 @@ blockquote span {
     padding: 0;
 }
 
+.london-cover {
+	background-image: url("../images/country-main/london/london.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /*infopage*/
 
+.fact p {
+	margin-top: 10px;
+}
+
+
 /*section one*/
-.experience {
+/*.experience {
 	background-color: #68C2AA;
 }
 
@@ -463,19 +672,24 @@ blockquote span {
 
 .stay {
 	background-color: #689AC2;
-}
+}*/
 
 .experience,
 .recommend,
 .eat,
 .stay {
-	padding: 30px 0px;
+	padding: 50px 0px;
 	text-align: center;
 }
 
 .info img {
 	width: 100%;
+	transform: rotate(-7deg);
+}
 
+.image-right img {
+	width: 100%;
+	transform: rotate(7deg);
 }
 
 /*fun facts*/
@@ -623,6 +837,10 @@ footer {
 		margin: .5vw;
 	}
 
+	.info img {
+		width: 33%;
+	}
+
 	/*Country page*/
 
 	/*.experience,
@@ -648,7 +866,7 @@ footer {
 	}
 
 	.column-two .block {
-		height: calc(30vw - 54px);
+		height: calc(25vw - 5px);
 	}
 
 	.row-two .block {
@@ -661,8 +879,6 @@ footer {
 	.column-two .block {
 		height: calc(30vw - 56px);
 	}
-
-	/*About*/
 
 	.about p {
 		width: 60%;
@@ -679,14 +895,9 @@ footer {
 		margin: 50px 0px 60px 0px;
 	}
 
-	/*Continent page*/
-
-
 	.selections {
 		max-width: 100%; 
 	}
-
-	/*Country page*/
 
 }
 

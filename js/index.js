@@ -26,4 +26,12 @@ $(document).ready(function() {
 
 });
 
+// slick slider
+$(document).ready(function(){
+  	$('.slick-slider').slick({
+    // setting-name: setting-value
+  	});
+
+});
+
 
