@@ -24,14 +24,56 @@ $(document).ready(function() {
 		offset: '70%'
 	});
 
+	 // add waypoint and animate fade up to h2
+	$('.fade-up').waypoint(function() {
+	    $(this.element).addClass('fadeInUp');
+	}, {
+		offset: '80%'
+	});
+
+	// $('.fade-up').waypoint(function() {
+	//     $(this.element).addClass('fadeInUp');
+	// }, {
+	// 	offset: '70%'
+	// });
+
 });
 
-// slick slider
-$(document).ready(function(){
-  	$('.slick-slider').slick({
-    // setting-name: setting-value
-  	});
+	// slick slider
+	$('.slick-slider').slick({
+	  dots: true,
+	  infinite: false,
+	  speed: 300,
+	  slidesToShow: 4,
+	  slidesToScroll: 4,
+	  responsive: [
+	    {
+	      breakpoint: 1024,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 3,
+	        infinite: true,
+	        dots: true
+	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 2
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1
+	      }
+	    }
+	  ]
+	});
 
-});
+
+  
 
 

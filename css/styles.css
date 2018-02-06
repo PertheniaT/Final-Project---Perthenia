@@ -47,7 +47,7 @@ html {
 }
 
 body {
-  	color: #606161;
+  	color: #fff;
   	font-family: 'Open Sans', sans-serif;
   	font-weight: 300;
   	background: #B6E4EC;
@@ -71,6 +71,25 @@ li {
 }*/
 
 /*****************************************************
+/* ANIMATION
+/*****************************************************/
+
+.fade-right,
+.fade-left {
+	opacity: 0;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.fade-up {
+	opacity: 0;
+	animation-duration: .8s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+/*****************************************************
 /* HEADER
 /*****************************************************/
 
@@ -80,7 +99,8 @@ header {
 }
 
 .logo {
-	margin: 10px 10px;
+	margin-top: 12px;
+	width: 40%;
 }
 
 h1 {
@@ -91,13 +111,14 @@ h1 {
 	padding: 200px 0;
 	margin: 0;
 	font-family: 'Londrina Solid', sans-serif;
-	text-shadow: 0 0 6px #000;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 	letter-spacing: 2px;
 }
 
 h2 {
 	text-align: center;
-	font-size: 2em;
+	font-size: 2.5em;
+	margin: 5px 0px;
 }
 
 /*****************************************************
@@ -110,7 +131,7 @@ h2 {
 	right: 0;
 	height: 100%;
 	width: 0%;
-	background-color: #a372a7;
+	background-color: #80b632;
 	overflow-x: hidden;
 	z-index: 1;
 	transition: 0.5s;
@@ -135,7 +156,7 @@ h2 {
 }
 
 .overlay a:hover, .overlay a:focus {
-	color: #f3c1f7;
+	color: #11827c;
 }
 
 .overlay .closeBtn {
@@ -152,14 +173,15 @@ a .burgermenu {
 	margin: 0 10px;
 }
 
-a .fa {
+a .fa-bars {
 	float: right;
-    font-size: 1.7em;
-    margin-right: 20px;
+    font-size: 2em;
+    margin-top: 15px;
+    color: #fff;
 }
 
-a .fa:hover {
-	color: #4d41c6;
+a .fa-ba:hover {
+	color: #1f635d;
 }
 
 a .subsubmenu:hover {
@@ -181,7 +203,7 @@ li :hover .subsubmenu a {
 /*****************************************************/
 
 .intro {
-	background-image: url("../images/Map.jpg");
+	background-image: url("../images/cover.jpg");
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -191,28 +213,20 @@ li :hover .subsubmenu a {
     padding: 0;
 }
 
-.fade-right,
-.fade-left {
-	opacity: 0;
-	animation-duration: 1s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
-}
-
 /****************************
 /* ABOUT SECTION
 /****************************/
 
 .about {
-	background-color: #a8a2ea;
+	background-color: #7c3545;
 	padding: 20px 0;
 }
 
-.profile img {
-	max-width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+img.profile {
+	width: 70%;
 	display: block;
+	transform: rotate(7deg);
+	margin: auto;
 }
 
 .about p {
@@ -220,11 +234,16 @@ li :hover .subsubmenu a {
 }
 
 /****************************
-/* CONTINENT NAVIGATION
+/* HOMEPAGE IMAGE GRID
 /****************************/
 
 .explore {
-	margin-bottom: 30px;
+	background-color: #d47d42;
+	padding-top: 5px;
+}
+
+.explore p {
+	text-align: center;
 }
 
 .imagegrid {
@@ -233,16 +252,18 @@ li :hover .subsubmenu a {
 	max-width: 100%;
 }
 
-.block {
-	font-size: 3em;
-	color: #fff;
-	margin: 0;
+.grid-text {
 	text-align: center;
-	width: 100%;
-	font-family: 'Londrina Solid', sans-serif;
-	text-shadow: 0 0 6px #000;
-	letter-spacing: 2px;
-	font-weight: 400;
+	font-size: 3em;
+	font-weight: 300;
+	font-family: 'Londrina Solid', open;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	color: #fff;
+}
+
+.block {
+	background-position: center;
+	padding: 75px 0;
 }
 
 .europe {
@@ -250,8 +271,8 @@ li :hover .subsubmenu a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
-	height: 350px;
 	margin-bottom: 10px;
+	display: block;
 }
 
 .africa {
@@ -260,7 +281,7 @@ li :hover .subsubmenu a {
 	background-size: cover;
 	margin: 0;
     margin-bottom: 10px;
-    height: 180px;
+    display: block;
 }
 
 .america {
@@ -269,7 +290,7 @@ li :hover .subsubmenu a {
 	background-size: cover;
 	margin: 0;
     margin-bottom: 10px;
-    height: 230px;
+    display: block;
 }
 
 .asia {
@@ -278,7 +299,7 @@ li :hover .subsubmenu a {
 	background-size: cover;
 	margin: 0;
     margin-bottom: 10px;
-    height: 230px;
+    display: block;
 }
 
 /****************************
@@ -286,11 +307,11 @@ li :hover .subsubmenu a {
 /****************************/
 
 .quote {
-	background-color: #6ae3d5;
+	background-image: url("../images/quote/sunset.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 100vw;
 	height: 250px;
-	margin: 0;
-	padding: 0;
 }
 
 blockquote {
@@ -300,6 +321,8 @@ blockquote {
 	text-align: center;
 	width: 580px;
 	margin: 0 auto;
+	color: #fff;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
 
 blockquote span {
@@ -336,11 +359,17 @@ blockquote span {
 }
 
 .categories {
-	margin-bottom: 30px;
+	background-color: #b8bf41;
+	padding: 30px;
 }
 
 .categories p {
 	text-align: center;
+	margin: 5px 0px 10px;
+}
+
+.areas {
+	padding-bottom: 30px;
 }
 
 .selections {
@@ -368,7 +397,7 @@ blockquote span {
 	font-weight: 300;
 	margin-top: 35%;
 	font-family: 'Londrina Solid', open;
-	text-shadow: 0 0 6px #000;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 	color: #fff;
 }
 
@@ -562,6 +591,17 @@ blockquote span {
     padding: 0;
 }
 
+.amsterdam-cover {
+	background-image: url("../images/country-main/amsterdam/amsterdam.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .seicelandcover {
 	background-image: url("../images/country-main/south-iceland/southiceland-cover.jpg");
 	background-position: center;
@@ -652,43 +692,32 @@ blockquote span {
 
 /*infopage*/
 
+.info,
+.gallery,
+.fun {
+	background-color: #d64d48;
+}
+
 .fact p {
 	margin-top: 10px;
 }
-
-
-/*section one*/
-/*.experience {
-	background-color: #68C2AA;
-}
-
-.recommend {
-	background-color: #689AC2;
-}
-
-.eat {
-	background-color: #68C2AA;
-}
-
-.stay {
-	background-color: #689AC2;
-}*/
 
 .experience,
 .recommend,
 .eat,
 .stay {
-	padding: 50px 0px;
+	padding: 20px 0px;
 	text-align: center;
 }
 
 .info img {
-	width: 100%;
+	width: 80%;
 	transform: rotate(-7deg);
+	margin-top: 10px;
 }
 
-.image-right img {
-	width: 100%;
+img.image-right {
+	width: 80%;
 	transform: rotate(7deg);
 }
 
@@ -702,30 +731,178 @@ blockquote span {
 	width: 100%;
 }
 
-.fact {
-	background-color: #3220A4;
-	border-radius: 50%;
-	width: 140px;
-	height: 140px;
+.fact, .phrases {
 	margin: 10px;
 	color: #fff;
 	text-align: center;
-	font-size: .8em;
+	font-size: .9em;
 }
+
+.word {
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+/**********************
+image slider
+**********************/
+
+.slick-image {
+	max-width: 100%;
+	height: 200px;
+	margin: 0px 20px;
+	background-color: grey;
+}
+
+.slick-initialized .slick-slide {
+	margin: 0px 5px;
+}
+
+.fun {
+	padding: 10px;
+}
+
+.gallery {
+	padding: 10px 0px 40px;
+}
+
+.gallery p {
+	text-align: center;
+}
+
+/************
+Venice gallery
+************/
+
+.image-one {
+	background-image: url("../images/venice/slick/venice1.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-two {
+	background-image: url("../images/venice/slick/venice2.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-three {
+	background-image: url("../images/venice/slick/venice3.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-four {
+	background-image: url("../images/venice/slick/venice4.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-five {
+	background-image: url("../images/venice/slick/venice5.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-six {
+	background-image: url("../images/venice/slick/venice6.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-seven {
+	background-image: url("../images/venice/slick/venice7.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-eight {
+	background-image: url("../images/venice/slick/venice8.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-nine {
+	background-image: url("../images/venice/slick/venice9.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.icons {
+		width: 40%;
+	}
 
 /*****************************************************
 /* FOOTER
 /*****************************************************/
 
 footer {
-	background-color: #fff;
-	color: #B6E4EC;
+	background-color: #3c8e87;
+	color: #fff;
 	text-align: center;
 	padding-bottom: 10px;
 }
 
 .social a {
 	text-align: center;
+}
+
+.fa-instagram {
+	font-size: 1.7em;
+	text-align: center;
+	display: block;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+a .fa-instagram:hover {
+	color: #1f635d;
 }
 
 .social {
@@ -767,17 +944,28 @@ footer {
 		height: 100%;
 	}
 
-	.about, .explore, .quote {
-	height: auto;
-	/*max-width: 1024px;*/
+	.logo {
+		margin: 10px 10px;
+		width: 15%;
+		text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 	}
 
-	.profile {
+	img.profile {
 		float: right;
+		width: 27%;
+	}
+
+	.about p {
+		width: 60%;
+		font-size: 1.075em;
+	}
+
+	.about h2 {
+		margin-right: 41%;
 	}
 
 	.explore {
-		padding: 10px 0;
+		padding: 10px 0 50px;
 	}
 
 	.imagegrid {
@@ -794,6 +982,13 @@ footer {
 		flex-direction: column;
 		margin-right: 10px;
 	}
+	
+	.block {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+	}
 
 	.column-one .block {
 		height: 50vw;
@@ -807,7 +1002,7 @@ footer {
 	}
 
 	.column-two .block {
-		height: calc(30vw - 40px);
+		height: calc(25vw - 5px);
 	}
 
 	.column-two > .block {
@@ -821,34 +1016,41 @@ footer {
 	}
 
 	.row-two .block {
-		flex-basis: calc(50% - 5px);
+		width: calc(50% - 5px);
 	}
 
 	.row-two .block:first-child {
 		margin-right: 10px;
 	}
 
+	.africa {
+		flex-basis: 100%;
+	}
+
 	/*Continent page*/
 
 	.tile {
-		/*flex: auto;*/
 		width: 230px;
 		height: 230px;
 		margin: .5vw;
 	}
 
 	.info img {
-		width: 33%;
+		width: 27%;
+		margin-top: 22px;
 	}
 
 	/*Country page*/
 
-	/*.experience,
-	.recommend,
-	.eat,
-	.stay {
-		max-width: 900px;
-	}*/
+	.experience p,
+	.eat p {
+		margin-left: 33%;
+	}
+
+	.recommend p,
+	.stay p {
+		margin-right: 33%;
+	}
 
 	.image-left {
 		float: left;
@@ -857,6 +1059,29 @@ footer {
 	.image-right {
 		float: right;
 	}
+
+	.funfacts, 
+	.phrases {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.fact, 
+	.phrase {
+		width: 220px;
+		margin: 0px 10px;
+	}
+
+	.icons {
+		width: 50%;
+	}
+
+	blockquote {
+	padding-top: 70px;
+	}
+
 }
 
 @media screen and (min-width: 980px) {
@@ -872,33 +1097,6 @@ footer {
 	.row-two .block {
 		flex-basis: calc(50% - 5px);
 	}
-}
-
-@media screen and (max-width: 1024px) {
-
-	.column-two .block {
-		height: calc(30vw - 56px);
-	}
-
-	.about p {
-		width: 60%;
-		font-size: 1.075em;
-		padding-top: 60px;
-	}
-
-	.about h2 {
-		margin: 0;
-		margin: 20px 0px 0px 0px;
-	}
-
-	.explore h2 {
-		margin: 50px 0px 60px 0px;
-	}
-
-	.selections {
-		max-width: 100%; 
-	}
-
 }
 
 
